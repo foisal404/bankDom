@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="space-y-7">
+    <header>
+        <h1 class="text-6xl text-center"> Takar Bank !!!</h1>
+    </header>
+    <main>
+        <section class="space-y-7">
+            <div class="top-div grid grid-cols-3 text-xl  gap-4 w-5/6 mx-auto text-white  ">
+                <div class="bg-slate-600 rounded-lg p-5">
+                    <h1 >diposit</h1>
+                    <h1>$<span id="dipositValue">00</span></h1>
+                </div>
+                <div class="bg-orange-400 rounded-lg p-5">
+                    <h1>withdraw</h1>
+                    <h1>$<span id="withdrawValue">00</span></h1>
+                </div>
+                <div class="bg-lime-500 rounded-lg p-5">
+                    <h1>balance</h1>
+                    <h1>$<span id="balanceValue">1200</span></h1>
+                </div>
+            </div>
+            <div class="sec-div grid grid-cols-2 text-xl  gap-7 w-5/6 mx-auto text-white ">
+                <div class="bg-teal-500 rounded-lg p-5 space-y-3">
+                    <h1 >Your Diposit</h1>
+                    <input type="text" name="" id="dipositInput"  placeholder="input" class="text-black py-1 rounded-md px-2 text-sm">
+                    <br>
+                    <button id="dipositButton" class="bg-green-600 px-6 py-2 rounded-lg">Diposit</button>
+                </div>
+                <div class="bg-fuchsia-600 rounded-lg p-5 space-y-3">
+                    <h1>Your Withdraw</h1>
+                    <input type="text" name="" id="withdrawInput" placeholder="input" class="text-black py-1 rounded-md px-2 text-sm ">
+                    <br>
+                    <button id="withdrawButton" class="bg-red-500 px-6 py-2 rounded-lg">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/calculation.js"></script>
+</body>
+</html>
